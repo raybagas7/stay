@@ -12,6 +12,7 @@ class MainKotActivity : AppCompatActivity() {
     val variableint = 230899
     val variablearray = intArrayOf(10,20,30,40,50)
     val variablechar = 'O'
+    val variablebaru = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
