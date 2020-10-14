@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainKotActivity"
+    android:background="@mipmap/mainbg">
+
+    <TextView
+        android:id="@+id/namalengkapshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NamaLengkap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorwhite"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/nomortelpshow"
+        android:layout_below="@+id/namalengkapshow"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Nomor Telepon"
+        android:textColor="@color/colorwhite"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/stringan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="String2"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/stringan"
+        android:layout_below="@id/stringan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="String"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/intan"
+        android:layout_below="@+id/stringan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="INT"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/intanarray1"
+        android:layout_below="@+id/intan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="INT Array 1"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/intanarray2"
+        android:layout_below="@+id/intanarray1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="INT Array 2"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/charan"
+        android:layout_below="@+id/intanarray2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Char"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        />
+    <Button
+        android:id="@+id/kembali"
+        android:text="Kembali"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/charan"/>
+</RelativeLayout>

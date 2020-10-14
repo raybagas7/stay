@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarActivity"
+    android:background="@mipmap/daftarbg">
+
+    <ImageView
+        android:id="@+id/logologin"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:src="@drawable/loginlogo"
+        android:layout_centerHorizontal="true"
+        />
+    <RelativeLayout
+        android:id="@+id/filler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Nama Lengkap"
+            android:background="@drawable/custom_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/emaildaftar"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Email"
+            android:layout_below="@+id/fullname"
+            android:background="@drawable/custom_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/passwordaftar"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Password"
+            android:layout_below="@+id/emaildaftar"
+            android:background="@drawable/custom_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="10dp"
+            android:inputType="textPassword"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/notelp"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Nomor Telepon"
+            android:layout_below="@+id/passwordaftar"
+            android:background="@drawable/custom_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="10dp"
+            android:inputType="number"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/nomorktp"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Nomor KTP"
+            android:layout_below="@+id/notelp"
+            android:background="@drawable/custom_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/butttonfill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filler"
+        android:layout_centerHorizontal="true">
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/daftarbutdaf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorPrimary"
+        android:background="@drawable/custom_button"
+        android:text="DAFTAR"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

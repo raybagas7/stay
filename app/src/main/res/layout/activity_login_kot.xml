@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginKotActivity"
+    android:background="@color/colorsplashbg">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:id="@+id/logologinkot"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/loginlogo"
+            android:layout_centerHorizontal="true"
+            />
+
+        <EditText
+            android:id="@+id/emailloginkot"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Email"
+            android:drawableStart="@drawable/ic_email"
+            android:background="@drawable/custom_input"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="10dp"
+            android:inputType="textEmailAddress"
+            android:layout_below="@id/logologinkot"
+            android:layout_centerHorizontal="true"/>
+
+        <EditText
+            android:id="@+id/passwordloginkot"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:hint="Password"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_password"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:layout_below="@id/emailloginkot"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordloginkot"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/loginbutkot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/custom_button"
+                android:text="LOGIN" />
+
+            <Button
+                android:id="@+id/daftarbutkot"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/loginbut"
+                android:textColor="@color/colorwhite"
+                android:background="@drawable/custom_button2"
+                android:text="DAFTAR" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
